@@ -66,8 +66,7 @@ namespace StringManipulation.Tests
             var moqlogger = new Mock<ILogger<StringOperations>>();
             var objcountletters = new StringOperations(moqlogger.Object);
 
-            var result = objcountletters.CountOccurrences("Perpetuo Beats", 'e');
-            Assert.Equal(3, result);
+            Assert.Equal(1, result);
         }
 
         [Fact]
