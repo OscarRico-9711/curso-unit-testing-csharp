@@ -1,18 +1,13 @@
 ﻿using Humanizer;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StringManipulation
 {
     public class StringOperations
     {
         private readonly ILogger _logger;
-        public StringOperations() {
+        public StringOperations()
+        {
         }
 
         public StringOperations(ILogger<StringOperations> logger)
@@ -34,7 +29,7 @@ namespace StringManipulation
 
         public int GetStringLength(string str)
         {
-            if(str is null)
+            if (str is null)
             {
                 throw new ArgumentNullException();
             }
@@ -51,7 +46,7 @@ namespace StringManipulation
 
         public string TruncateString(string input, int maxLength)
         {
-            if(maxLength <=0)
+            if (maxLength <= 0)
             {
                 throw new ArgumentOutOfRangeException();
             }
