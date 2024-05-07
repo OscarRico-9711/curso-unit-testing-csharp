@@ -26,8 +26,8 @@ namespace StringManipulation.Tests
         [Fact]
         public void ReverseString()
         {
-            var result = stringOperations.ReverseString("Perpetuo Beats");
-            Assert.Equal("staeB outepreP", result);
+            var result = stringOperations.ReverseString("Perpetuo Beatss");
+            Assert.Equal("sstaeB outepreP", result);
         }
 
         [Fact]
