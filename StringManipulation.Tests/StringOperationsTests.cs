@@ -40,8 +40,8 @@ namespace StringManipulation.Tests
         [Fact]
         public void RemoveWhitespace()
         {
-            var result = stringOperations.RemoveWhitespace("Perpetuo Beats");
-            Assert.Equal("PerpetuoBeats", result);
+            var result = stringOperations.RemoveWhitespace("Perpetuo Beatss");
+            Assert.Equal("PerpetuoBeatss", result);
         }
 
         [Fact]
